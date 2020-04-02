@@ -45,6 +45,10 @@ header {
     margin: 5px 10% 12px;
 }
 
+.example a:hover{
+    color: #e47714;
+}
+
 .sisu h1{
     color: white;
     margin-top: 0px;
@@ -132,6 +136,10 @@ form.example button img{
 }
 .description{
     margin-left: 190px;
+}
+
+.description a img:hover{
+    width: 17%;
 }
 
 .plus_pic img{
@@ -279,7 +287,6 @@ footer {
 .info div {
     float: left;
     width: 33.33%;
-    padding: 10px;
     flex-direction: column;
     margin-top: 2%;
     text-align: center;
@@ -289,11 +296,7 @@ footer {
 .info div p{
     text-align: left;
     line-height: 7px;
-}
-
-
-.info a {
-    text-decoration: none;
+    margin-left: 5%;
 }
 
 .info button{
@@ -301,6 +304,10 @@ footer {
     width: 60%;
     height: 40px;
     border: #1ABC9C;
+}
+
+.info button:hover{
+    background-color: #e47714;
 }
 
 .info button p{
@@ -314,11 +321,9 @@ footer {
 
 }
 
-
-.socialmedia-icons {
-    width: 100%;
-    margin-left: 34%;
-
+.socialmedia-icons{
+    text-align: center;
+    margin-left: 33%;
 }
 
 .socialmedia-icons img {
@@ -327,10 +332,13 @@ footer {
     margin: 0 10px 0 0;
     display: inline;
     overflow: hidden;
-
-
-
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(226deg) brightness(102%) contrast(101%);
+
+}
+
+.socialmedia-icons img:hover{
+    width: 40px;
+    height: 40px;
 
 }
 
