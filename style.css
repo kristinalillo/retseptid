@@ -96,7 +96,7 @@ form.example button img{
 /** MAIN  INDEX**/
 
 .box{
-    width: 600px;
+    width: 55%;
     height: 200px;
     background-color: #95A5A6;
     border: #95A5A6;
@@ -112,18 +112,21 @@ form.example button img{
     text-align: center;
     padding-top: 15px;
     margin-right: 40px;
+
 }
 
 .box h4 {
     color: white;
     text-align: left;
     margin-bottom: 0px;
+    margin-left: 10px;
 }
 
 .box p{
     color: white;
     text-align: left;
     line-height: 7px;
+    margin-left: 10px;
 
 }
 
@@ -139,7 +142,7 @@ form.example button img{
 }
 
 .description a img:hover{
-    width: 17%;
+    width: 65px;
 }
 
 .plus_pic img{
