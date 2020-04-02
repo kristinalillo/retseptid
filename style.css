@@ -155,17 +155,18 @@ form.example button img{
 
 /** MAIN CHICKEN **/
 .chicken-box{
-    width: 600px;
-    height: 1030px;
+    width: 50%;
+    height: auto;
     background-color: #95A5A6;
     border: #95A5A6;
     box-sizing: border-box;
-    margin: 30px auto;
+    margin: 40px auto;
     background-repeat: no-repeat;
     display: block;
 }
 
 .chicken-box img{
+    width: 100%;
     opacity: 50%;
 }
 
@@ -196,8 +197,7 @@ form.example button img{
     border: 2px solid white;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 15px;
 }
 
 .circle p{
@@ -215,13 +215,14 @@ form.example button img{
 }
 
 .comment-box{
-    width: 500px;
-    height: 100px;
+    width: 80%;
+    height: auto;
     background-color: white;
     box-sizing: border-box;
     margin: 30px auto;
     background-repeat: no-repeat;
     display: block;
+
 }
 
 .user_pic img{
@@ -255,6 +256,7 @@ form.example button img{
     display: inline-block;
     opacity: 100%;
     float: right;
+    margin-bottom: 20px;
 }
 
 /** FOOTER **/
