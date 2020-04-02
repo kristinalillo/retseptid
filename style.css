@@ -161,6 +161,7 @@ form.example button img{
     border: #95A5A6;
     box-sizing: border-box;
     margin: 40px auto;
+    padding-bottom: 20px;
     background-repeat: no-repeat;
     display: block;
 }
@@ -215,13 +216,14 @@ form.example button img{
 }
 
 .comment-box{
-    width: 80%;
-    height: auto;
+    width: 87%;
+    height: 100px;
     background-color: white;
     box-sizing: border-box;
-    margin: 30px auto;
     background-repeat: no-repeat;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -230,33 +232,62 @@ form.example button img{
     background-color: #16A085;
     opacity: 100%;
     border-radius: 50%;
-    width: 55px;
+    width: 70px;
     padding: 10px 10px 10px 10px;
-    margin-left: 40px;
-    margin-top: 12px;
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
 #comment{
     float: left;
     background-color: #C0C8C8;
     border: #C0C8C8;
-    width: 300px;
-    height: 40px;
+    width: 70%;
+    height: 50px;
     margin-left: 20px;
     margin-top: 15px;
     color: white;
+    display: block;
+    margin-right: auto;
+
 }
 .container3{
-    margin-right: 120px;
-    margin-top: 25px;
+    display: flex;
+    float: right;
+    position: relative;
+    margin-top: 2px;
+    margin-right: 11%;
 }
 
 .stars img{
-    width: 15px;
+    width: 17px;
     display: inline-block;
     opacity: 100%;
     float: right;
     margin-bottom: 20px;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+.button button{
+    background-color: #16A085;
+    float: right;
+    width: 70px;
+    height: 25px;
+    border: 1px #16A085;
+}
+
+.button button p{
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+    color: white;
+
+
+}
+
+.button button:hover{
+    background-color: #e47714;
 }
 
 /** FOOTER **/
@@ -344,6 +375,12 @@ footer {
 .socialmedia-icons img:hover{
     width: 40px;
     height: 40px;
+}
+
+@media screen and (max-width: 960px) {
+    .comment-box{
+        visibility: hidden;
+    }
 
 }
 
