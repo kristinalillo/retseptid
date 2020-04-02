@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
 }
 
 html, body {
@@ -13,160 +16,158 @@ body {
     width: 100%;
     background-color: #ECF0F1;
 }
+
  /** HEADER **/
 header {
     background-color: #16A085;
     padding-top: 20px;
     padding-bottom: 10px;
     width: 100%;
-    margin: auto;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
+}
 
+header a {
+    margin-left: 50px;
+}
 
+#logo {
+    width: 150px;
 }
 
 .sisu {
-     width: 100%;
-     display: inline-block;
-     justify-content: center;
-     align-items: center;
-     vertical-align: middle;
-     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 200px;
+}
 
- }
-
-.example a{
-    float: right;
+.sisu h1 {
     color: white;
-    margin: 5px 10% 12px;
 }
 
-.example a:hover{
-    color: #e47714;
+
+.search {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
-.sisu h1{
-    color: white;
-    margin-top: 0px;
-    margin-right: 12%;
-
+.search-box {
+    display: flex;
+    flex-direction: row;
 }
 
-form.example input[type=text] {
+.search input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 2px solid #EBEBEB;
-    float: left;
-    width: 80%;
+    width: 100%;
     background: #EBEBEB;
-
 }
 
-form.example button {
-    float: left;
-    width: 10%;
-    height: 10%;
+.search button {
+    width: 55px;
     color: white;
     font-size: 17px;
-    border: 1px solid #EBEBEB;
-    border-left: none;
+    border: none;
     cursor: pointer;
     background-color: #EBEBEB;
+    padding-top: 5px;
 }
 
-form.example button img{
+.search button img {
     width: 100%;
     height: 100%;
-    background-color:#EBEBEB;
+}
+
+.search a {
+    text-align: right;
+    color: white;
+    margin: 5px 0 12px;
+}
+
+.search a:hover {
+    color: #e47714;
 }
 
 
-#logo{
-    margin-top: 0px;
-    padding-left: 35px;
-    width: 150px;
-    float: left;
+.bars {
+    display: none;
 }
 
+/** MAIN INDEX**/
 
-/** MAIN  INDEX**/
-
-.box{
+.box {
     width: 55%;
-    height: 200px;
+    height: 225px;
     background-color: #95A5A6;
-    border: #95A5A6;
-    box-sizing: border-box;
     margin: 30px auto;
-    background-repeat: no-repeat;
-    display: block;
-
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
 }
 
-.box h3{
+.box h3 {
     color: white;
     text-align: center;
-    padding-top: 15px;
-    margin-right: 40px;
-
+    font-size: 25px;
+    margin: 10px 0 5px;
 }
 
 .box h4 {
     color: white;
     text-align: left;
-    margin-bottom: 0px;
-    margin-left: 10px;
+    font-size: 18px;
 }
 
-.box p{
+.box p {
     color: white;
     text-align: left;
     line-height: 7px;
-    margin-left: 10px;
-
 }
 
-.box img{
+.box img {
     width: 140px;
-    margin-left: 20px;
-    margin-top: 25px;
-    float: left;
-
-}
-.description{
-    margin-left: 190px;
+    margin: 20px;
 }
 
-.description a img:hover{
-    width: 65px;
+.description {
+    display: flex;
+    flex-direction: row;
 }
 
-.plus_pic img{
+.food-info {
+    width: 100%;
+}
+
+.description a img:hover {
+    filter: invert(25%);
+}
+
+.plus_pic {
     float: right;
-    width: 60px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(226deg) brightness(102%) contrast(101%);
-    padding-right: 30px;
-    padding-top: 40px;
+    margin-top: 30px;
+}
+
+.plus_pic img {
+    width: 40px;
+    filter: invert(100%);
 }
 
 /** MAIN CHICKEN **/
-.chicken-box{
-    width: 50%;
-    height: auto;
-    background-color: #95A5A6;
-    border: #95A5A6;
-    box-sizing: border-box;
+.chicken-box {
+    width: 75%;
+    background: #95A5A6;
     margin: 40px auto;
     padding-bottom: 20px;
-    background-repeat: no-repeat;
-    display: block;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.chicken-box img{
+.chicken-box img {
     width: 100%;
     opacity: 50%;
 }
@@ -177,22 +178,27 @@ form.example button img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.header h1 {
+    margin: 0;
+}
+
 .container {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.header2{
+.header2 {
     color: white;
     text-align: center;
 }
 
-.container2{
+.container2 {
     text-align: center;
 }
 
-.circle{
+.circle {
     height: 80px;
     width: 110px;
     border: 2px solid white;
@@ -201,34 +207,28 @@ form.example button img{
     margin: 15px;
 }
 
-.circle p{
+.circle p {
     color: white;
-    line-height: 4px;
+    line-height: 2px;
     margin-top: 25px;
-
 }
 
-.recipe p{
+.recipe p {
     color: white;
     padding-left: 40px;
     padding-right: 40px;
     line-height: 20px;
 }
 
-.comment-box{
-    width: 87%;
+.comment-box {
+    width: 90%;
     height: 100px;
     background-color: white;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    display: flex;
+    margin: 0 auto;
 }
 
-.user_pic img{
-    float: left;
+.user_pic img {
     background-color: #16A085;
     opacity: 100%;
     border-radius: 50%;
@@ -238,55 +238,54 @@ form.example button img{
     margin-top: 15px;
 }
 
-#comment{
-    float: left;
+.comment-container {
+    width: 100%;
+}
+
+#comment {
     background-color: #C0C8C8;
     border: #C0C8C8;
-    width: 70%;
+    width: 90%;
     height: 50px;
     margin-left: 20px;
     margin-top: 15px;
     color: white;
-    display: block;
-    margin-right: auto;
-
+    padding: 10px;
 }
-.container3{
+
+.container3 {
     display: flex;
-    float: right;
     position: relative;
-    margin-top: 2px;
-    margin-right: 11%;
+    margin-top: 5px;
+    float: right;
+    margin-right: 15%;
 }
 
-.stars img{
+.stars img {
     width: 17px;
     display: inline-block;
     opacity: 100%;
-    float: right;
     margin-bottom: 20px;
     margin-right: 2px;
     margin-top: 2px;
 }
 
-.button button{
+.button button {
     background-color: #16A085;
-    float: right;
     width: 70px;
     height: 25px;
+    margin-left: 10px;
     border: 1px #16A085;
 }
 
-.button button p{
+.button button p {
     font-weight: bolder;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     color: white;
-
-
 }
 
-.button button:hover{
+.button button:hover {
     background-color: #e47714;
 }
 
@@ -295,58 +294,41 @@ form.example button img{
 footer {
     background-color: #16A085;
     width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    position: relative;
-}
-
-.info hr{
-
-    width: 20px;
-    height: 200px;
-    background-color: #1ABC9C;
-    margin-top: 2%;
-    align-items: center;
-    border: #1ABC9C;
-}
-
-
-.info {
-
+    height: 260px;
     padding-bottom: 5px;
     display: flex;
-
 }
 
-.info div {
-    float: left;
-    width: 33.33%;
+.footer-third {
+    width: 33%;
     flex-direction: column;
     margin-top: 2%;
     text-align: center;
     color: white;
+    border-left: 20px solid #1ABC9C;
+    height: 210px;
 }
 
-.info div p{
-    text-align: left;
+.footer-third:first-of-type {
+    border-left: none !important;
+}
+
+.footer-third p {
     line-height: 7px;
-    margin-left: 5%;
 }
 
-.info button{
+.footer-third button {
     background-color: #1ABC9C;
     width: 60%;
     height: 40px;
     border: #1ABC9C;
 }
 
-.info button:hover{
+.footer-third button:hover {
     background-color: #e47714;
 }
 
-.info button p{
+.footer-third button p {
     padding: 0px;
     text-align: center;
     font-size: 20px;
@@ -354,33 +336,111 @@ footer {
     margin-right: auto;
     color: white;
     line-height: 0px;
-
 }
 
-.socialmedia-icons{
+.socialmedia-icons {
     text-align: center;
-    margin-left: 33%;
+    margin: 0 auto;
 }
 
 .socialmedia-icons img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin: 0 10px 0 0;
-    display: inline;
-    overflow: hidden;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(226deg) brightness(102%) contrast(101%);
-
+    filter: invert(100%);
 }
 
-.socialmedia-icons img:hover{
-    width: 40px;
-    height: 40px;
+.socialmedia-icons img:hover {
+    width: 25px;
+    height: 25px;
+    filter: invert(75%);
 }
 
 @media screen and (max-width: 960px) {
-    .comment-box{
-        visibility: hidden;
+    .search {
+        display: none;
     }
+    
+    header a {
+        margin-left: 2rem;
+    }
+    
+    #logo {
+        width: 5rem;
+    }
+    
+    .sisu {
+        margin-right: 2rem;
+    }
+    
+    .sisu h1 {
+        margin-top: 1rem;
+    }
+    
+    .bars {
+        display: block;
+        color: white;
+        font-size: 3rem;
+        margin-right: 2rem;
+        margin-top: 5px;
+    }
+    
+    .box {
+        width: 90%;
+    }
+    
+    .chicken-box {
+        width: 90%;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .footer-third {
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header a {
+        margin-left: 2rem;
+    }
+    
+    #logo {
+        width: 3rem;
+    }
+    
+    .sisu {
+        margin-right: 1rem;
+    }
+    
+    .sisu h1 {
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+    
+    .bars {
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+    
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .footer-third {
+        border: none;
+        width: 100%;
+        height: auto;
+    }
 }
 
