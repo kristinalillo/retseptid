@@ -1,0 +1,313 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    background-color: #16A085;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+
+}
+.sisu{
+    text-align: center;
+    display: block;
+    margin-left: 300px;
+}
+
+.logo img{
+    padding-left: 35px;
+    width: 125px;
+    float: left;
+}
+
+header h1{
+
+    margin: 0;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+header a {
+    font-size: 15px;
+    padding: 0 0 0 450px;
+    color: white;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.search_bar{
+    height: 35px;
+    width: 500px;
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.search-button {
+    background-image: url("icons/search.png");
+    height: 41px;
+    width: 41px;
+    cursor: pointer;
+}
+
+.box{
+    width: 600px;
+    height: 200px;
+    background-color: #95A5A6;
+    border: #95A5A6;
+    box-sizing: border-box;
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    display: block;
+
+}
+
+.box h3{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    margin-right: 40px;
+}
+
+.box h4 {
+    color: white;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.box p{
+    color: white;
+    text-align: left;
+    line-height: 7px;
+
+}
+
+.box img{
+    width: 140px;
+    margin-left: 20px;
+    margin-top: 25px;
+    float: left;
+
+}
+.description{
+    margin-left: 190px;
+}
+
+.plus_pic img{
+    float: right;
+    width: 40px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(226deg) brightness(102%) contrast(101%);
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.chicken-box{
+    width: 600px;
+    height: 1030px;
+    background-color: #95A5A6;
+    border: #95A5A6;
+    box-sizing: border-box;
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.chicken-box img{
+    opacity: 50%;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header2{
+    color: white;
+    text-align: center;
+}
+
+.container2{
+    text-align: center;
+}
+
+.circle{
+    height: 80px;
+    width: 110px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.circle p{
+    color: white;
+    line-height: 4px;
+    margin-top: 25px;
+
+}
+
+.recipe p{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 20px;
+}
+
+.comment-box{
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    box-sizing: border-box;
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.user_pic img{
+    float: left;
+    background-color: #16A085;
+    opacity: 100%;
+    border-radius: 50%;
+    width: 55px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+#comment{
+    float: left;
+    background-color: #C0C8C8;
+    border: #C0C8C8;
+    width: 300px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: white;
+}
+.container3{
+    margin-right: 120px;
+    margin-top: 25px;
+}
+
+.stars img{
+    width: 15px;
+    display: inline-block;
+    opacity: 100%;
+    float: right;
+}
+
+footer {
+    background-color: #16A085;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.info hr{
+    width: 20px;
+    height: 200px;
+    background-color: #1ABC9C;
+    margin-top: 20px;
+    align-items: center;
+    border: #1ABC9C;
+}
+
+
+.info {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p{
+    color: white;
+    text-align: left;
+    line-height: 7px;
+
+}
+
+.info h2 {
+    font-weight:600;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.info div {
+    width: 300px;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 25px;
+    text-align: center;
+
+
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.info button{
+    background-color: #1ABC9C;
+    width: 200px;
+    height: 40px;
+    border: #1ABC9C;
+}
+
+.info button p{
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.socialmedia-icons {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.socialmedia-icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(226deg) brightness(102%) contrast(101%);
+
+}
+
